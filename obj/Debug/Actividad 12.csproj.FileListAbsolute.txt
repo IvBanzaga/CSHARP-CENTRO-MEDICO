@@ -51,3 +51,56 @@ C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Activida
 C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Tratamientonew.baml
 C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Hospitalizacion.g.cs
 C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Hospitalizacion.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\Actividad 12.exe.config
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\Actividad 12.exe
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\Actividad 12.pdb
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\BluwolfIcons.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\ControlzEx.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MahApps.Metro.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignColors.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\BluwolfIcons.xml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\ControlzEx.xml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MahApps.Metro.pdb
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MahApps.Metro.xml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignThemes.MahApps.pdb
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.csproj.AssemblyReference.cache
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.csproj.SuggestedBindingRedirects.cache
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Consulta.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Doctor.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Hospitalizacion.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Paciente.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Principal.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Tratamiento.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Tratamientonew.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\MainWindow.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Registro\RegistroDoctor.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Usuario\PanelUsuario.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\App.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12_MarkupCompile.cache
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12_MarkupCompile.lref
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\App.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Consulta.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Doctor.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Hospitalizacion.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Paciente.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Principal.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Tratamiento.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\Tratamientonew.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\MainWindow.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Registro\RegistroDoctor.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Usuario\PanelUsuario.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.g.resources
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad_12.Properties.Resources.resources
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.csproj.GenerateResource.cache
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.csproj.CoreCompileInputs.cache
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.csproj.CopyComplete
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.exe
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.pdb

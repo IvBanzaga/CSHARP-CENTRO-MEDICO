@@ -24,38 +24,39 @@
             <Grid.Background>
                 <ImageBrush ImageSource="/Cpanel/cpanel_Doctor.jpg" Opacity="0.3"/>
             </Grid.Background>
+            <Rectangle HorizontalAlignment="Left" Height="201" Margin="1004,84,0,0" Stroke="Black" VerticalAlignment="Top" Width="340" Fill="#FF627EED"/>
             <Label x:Name="Txt_Pacientes" Content="Pacientes" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="30,29,0,0" />
-            <ListBox Name="ListaPacientes" Height="150" Width="135" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Margin="30,69,0,0" Background="#FFA0C0CA" VerticalAlignment="Top" SelectionChanged="ListaPacientes_SelectionChanged"/>
+            <ListBox x:Name="ListaPacientes" Height="150" Width="135" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Margin="30,69,0,0" Background="#FFA0C0CA" VerticalAlignment="Top" SelectionChanged="ListaPacientes_SelectionChanged"/>
 
             <Label x:Name="Txt_Cama" Content="Cama" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Cursor="" Margin="796,29,0,0"/>
-            <ListBox Name="ListaCamaAsignada" Height="150" Width="155" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" MouseDoubleClick="ListaCamaAsignada_MouseDoubleClick" Margin="796,69,0,0"/>
+            <ListBox x:Name="ListaCamaAsignada" Height="150" Width="155" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" MouseDoubleClick="ListaCamaAsignada_MouseDoubleClick" Margin="796,69,0,0"/>
 
             <Label x:Name="Txt_CamaDoctor" Content="Cama" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Cursor="" Margin="802,289,0,0"/>
 
-            <ListBox Name="ListaCamaAsignadaPacienteDoctor" Height="150" Width="132" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" MouseDoubleClick="ListaCamaAsignadaPacienteDoctor_MouseDoubleClick" Margin="796,331,0,0"/>
+            <ListBox x:Name="ListaCamaAsignadaPacienteDoctor" Height="150" Width="132" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" MouseDoubleClick="ListaCamaAsignadaPacienteDoctor_MouseDoubleClick" Margin="796,331,0,0"/>
 
 
             <Label x:Name="Txt_DatosHospitalalizacion" Content="Hospitalizaciones Asignadas Al Paciente" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="177,29,0,0"/>
             <Label x:Name="Txt_DatosHospitalalizacionDC" Content="MOSTRAR Hospitalización Paciente" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1009,290,0,0"/>
 
-            <ListBox Name="TodosHospitalizacion" Height="150" Width="340" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="192,69,0,0" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" MouseDoubleClick="TodosHospitalizacion_MouseDoubleClick" />
+            <ListBox x:Name="TodosHospitalizacion" Height="150" Width="340" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="192,69,0,0" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" MouseDoubleClick="TodosHospitalizacion_MouseDoubleClick" />
 
 
-            <ListBox  Name="TodosHospitalizacionDoctor" Height="150" Width="340" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="1004,331,0,0" SelectionChanged="TodosHospitalizacionDoctor_SelectionChanged" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+            <ListBox  x:Name="TodosHospitalizacionDoctor" Height="150" Width="340" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="1004,331,0,0" SelectionChanged="TodosHospitalizacionDoctor_SelectionChanged" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
 
 
             <Label x:Name="Txt_HospitalizacionesDcotor" Content="Hospitalizaciones Asg. Doctor" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="192,290,0,0" />
 
-            <ListBox Name="TodosHospitalizacionDoctorAsignado" Height="150" Width="340" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="192,331,0,0" SelectionChanged="TodosHospitalizacionDoctorAsignado_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True"/>
+            <ListBox x:Name="TodosHospitalizacionDoctorAsignado" Height="150" Width="340" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="192,331,0,0" SelectionChanged="TodosHospitalizacionDoctorAsignado_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True"/>
 
             <Label Content="Doctores" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,289,0,0"/>
-            <ListBox Name="ListaDoctores" Height="150" Width="135" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" SelectionChanged="ListaDoctores_SelectionChanged" Margin="30,331,0,0"/>
+            <ListBox x:Name="ListaDoctores" Height="150" Width="135" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" SelectionChanged="ListaDoctores_SelectionChanged" Margin="30,331,0,0"/>
 
             <Label Content="Doctor Asignado" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,28,0,0"/>
-            <ListBox Name="ListaDoctoresAsignados" Height="150" Width="171" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="585,68,0,0"/>
+            <ListBox x:Name="ListaDoctoresAsignados" Height="150" Width="171" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="585,68,0,0"/>
 
             <Label Content="Paciente Asignado" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="588,289,0,0"/>
-            <ListBox Name="ListaPacientesAsignados" Height="150" Width="171" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="585,331,0,0" SelectionChanged="ListaPacientesAsignados_SelectionChanged"/>
+            <ListBox x:Name="ListaPacientesAsignados" Height="150" Width="171" HorizontalAlignment="Left" ItemsSource="{Binding}" Foreground="Black"  FontSize="16" Background="#FFA0C0CA" VerticalAlignment="Top" Margin="585,331,0,0" SelectionChanged="ListaPacientesAsignados_SelectionChanged"/>
 
 
             <Button x:Name="BtnBorrar" Content="Borrar" HorizontalAlignment="Left" Margin="1002,477,0,0" VerticalAlignment="Top" Width="117" Background="#FFF70B00" Click="BtnBorrar_Click" />
@@ -70,29 +71,29 @@
             <Button x:Name="BtnAgregarHospitalizacion" Content="Agregar" HorizontalAlignment="Left" Margin="1119,477,0,0" VerticalAlignment="Top" Width="110" Click="BtnAgregarHospitalizacion_Click" />
             <Button x:Name="BtnModificarHopitalizacion" Content="Modificar" HorizontalAlignment="Left" Margin="1231,477,0,0" VerticalAlignment="Top" Width="113" Background="#FF3BF321" Click="BtnModificarHopitalizacion_Click" />
 
-            <Label Content="Habitación" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1018,60,0,0" Cursor=""/>
-            <TextBox Name="txbHabitacion" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Margin="1146,59,0,0"/>
+            <Label Content="Habitación" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1037,111,0,0" Cursor=""/>
+            <TextBox x:Name="txbHabitacion" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="50" Margin="1155,110,0,0"/>
 
-            <Label Content="Cama" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1062,112,0,0" Cursor=""/>
-            <TextBox Name="txbCama" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196" Margin="1146,111,0,0"/>
+            <Label Content="Cama" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1220,111,0,0" Cursor=""/>
+            <TextBox x:Name="txbCama" FontSize="20" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="47" Margin="1288,110,0,0"/>
 
 
-            <Label Content="Fecha Ingreso" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="989,169,0,0" Cursor=""/>
+            <Label Content="Fecha Ingreso" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1008,169,0,0" Cursor=""/>
 
             <Grid x:Name="FechaIngreso" HorizontalAlignment="Right" VerticalAlignment="Top" Height="45" Width="66" Margin="0,180,190,0">
 
-                <materialDesign:TimePicker Name="TxbHoraIngreso" VerticalAlignment="Top" Margin="10,-10,0,0" />
+                <materialDesign:TimePicker x:Name="TxbHoraIngreso" VerticalAlignment="Top" Margin="10,-10,0,0" />
             </Grid>
             <Grid>
-                <DatePicker Name="TxbFechaIngreso" FirstDayOfWeek="Monday" Height="45" Margin="1215,150,65,0" VerticalAlignment="Top"/>
+                <DatePicker x:Name="TxbFechaIngreso" FirstDayOfWeek="Monday" Height="45" Margin="1215,150,65,0" VerticalAlignment="Top"/>
             </Grid>
 
-            <Label Content="Fecha Alta" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1020,228,0,0" Cursor=""/>
+            <Label Content="Fecha Alta" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.925,0.984" Margin="1039,226,0,0" Cursor=""/>
             <Grid x:Name="FechaAlta" HorizontalAlignment="Right" VerticalAlignment="Top" Height="45" Width="55" Margin="0,220,190,0">
-                <materialDesign:TimePicker Name="TxbHoraAlta"/>
+                <materialDesign:TimePicker x:Name="TxbHoraAlta"/>
             </Grid>
             <Grid>
-                <DatePicker Name="TxbFechaAlta" FirstDayOfWeek="Monday" Height="25" Margin="1215,229,65,0" VerticalAlignment="Top"/>
+                <DatePicker x:Name="TxbFechaAlta" FirstDayOfWeek="Monday" Height="25" Margin="1215,229,65,0" VerticalAlignment="Top"/>
             </Grid>
 
         </Grid>
