@@ -1,0 +1,82 @@
+﻿<Window x:Class="Actividad_12.Registro.RegistroDoctor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad_12.Registro"
+        mc:Ignorable="d"
+        Title="Registro Doctor" Height="480" Width="800"
+        ResizeMode="CanMinimize"
+        WindowStyle="SingleBorderWindow"    
+        Icon="/ICONO.png"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        xmlns:controlzex="urn:controlzex" 
+        x:Name="Practica" 
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+
+
+
+
+
+        <TabControl>
+            <TabItem Header="Datos del Administrador">
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Registro/doctor.jpg"/>
+                    </Grid.Background>
+                    <Label Content="Nombre" FontSize="20" HorizontalAlignment="Left" Margin="419,160,0,0" VerticalAlignment="Top"/>
+                    <TextBox Name="txbNombre" FontSize="20" HorizontalAlignment="Left" Margin="548,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+
+                    <Label Content="1º Apellido" FontSize="20" HorizontalAlignment="Left" Margin="419,205,0,0" VerticalAlignment="Top"/>
+                    <TextBox Name="txbApellido1" FontSize="20" HorizontalAlignment="Left" Margin="548,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+
+                    <Label Content="2º Apellido" FontSize="20" HorizontalAlignment="Left" Margin="419,259,0,0" VerticalAlignment="Top"/>
+                    <TextBox Name="txbApellido2" FontSize="20" HorizontalAlignment="Left" Margin="548,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+
+                    <Label Content="NIF" FontSize="20" HorizontalAlignment="Left" Margin="419,309,0,0" VerticalAlignment="Top"/>
+                    <TextBox Name="txbNif" FontSize="20" HorizontalAlignment="Left" Margin="548,308,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.513,0.486"/>
+                    <Button x:Name="BtnSeleccionImagen" Click="BtnSeleccionImagen_Click"  Content="Seleccionar Imágen" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="419,83,0,0"/>
+                    <Image x:Name="imagenSeleccionada" Height="92" VerticalAlignment="Top" Margin="619,23,61,0" Source="/Cpanel/usuario.png" />
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Datos de Acceso">
+
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Registro/registro.jpg"/>
+                    </Grid.Background>
+                    <Label Name="txbSeleccion" Content="Selección" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="492,37,0,0"/>
+                    <ComboBox Name="cbRol" SelectedIndex="0" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="151" Margin="600,37,0,0">
+                        <ComboBoxItem Content="-- Función --"/>
+                        <ComboBoxItem Content="Administrador"/>
+                        <ComboBoxItem Content="Usuario"/>
+                    </ComboBox>
+                    <Label Content="Usuario" FontSize="20" HorizontalAlignment="Left" Margin="492,95,0,0" VerticalAlignment="Top"/>
+                    <TextBox Name="txbUsuario" FontSize="20" HorizontalAlignment="Left" Margin="600,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+
+                    <Label x:Name="Lb_nombre" Content="Password" FontSize="20" HorizontalAlignment="Left" Margin="492,152,0,0" VerticalAlignment="Top"/>
+                    <PasswordBox Name="txbPassword" FontSize="20" HorizontalAlignment="Left" Margin="600,142,0,0" VerticalAlignment="Top" Width="146"/>
+
+                    <Label Content="Confirmar" FontSize="20" HorizontalAlignment="Left" Margin="492,207,0,0" VerticalAlignment="Top"/>
+                    <PasswordBox Name="txbConfPassword" FontSize="20" HorizontalAlignment="Left" Margin="600,206,0,0" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.731,1.425"/>
+                    <Button Name="btnRegistro" Content="Registrar" FontSize="20" HorizontalAlignment="Left" Margin="641,310,0,0" VerticalAlignment="Top" Width="119" Click="btnRegistro_Click" RenderTransformOrigin="0.989,0.97" Background="#FF89ED53"/>
+                    <Button Name="btnAtras" Content="Volver" FontSize="20" HorizontalAlignment="Left" Margin="406,310,0,0" VerticalAlignment="Top" Width="105" Click="btnAtras_Click" Background="#FFFDA840"/>
+                    <Image HorizontalAlignment="Left" Height="105" Margin="367,90,0,0" VerticalAlignment="Top" Width="110" Source="/Registro/logindoctor.png"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+
+
+    </Grid>
+
+</Window>
+

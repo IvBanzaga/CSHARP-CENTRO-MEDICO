@@ -1,0 +1,53 @@
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\Actividad 12.exe.config
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\Actividad 12.exe
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\Actividad 12.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\BluwolfIcons.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\ControlzEx.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MahApps.Metro.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignColors.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\BluwolfIcons.xml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\ControlzEx.xml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MahApps.Metro.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MahApps.Metro.xml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignThemes.MahApps.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.csproj.AssemblyReference.cache
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Doctor.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Paciente.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Principal.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\MainWindow.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Registro\RegistroDoctor.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Usuario\PanelUsuario.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\App.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12_MarkupCompile.cache
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12_MarkupCompile.lref
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\App.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Doctor.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Paciente.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Principal.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\MainWindow.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Registro\RegistroDoctor.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Usuario\PanelUsuario.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.g.resources
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad_12.Properties.Resources.resources
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.csproj.GenerateResource.cache
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.csproj.CopyComplete
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.exe
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Actividad 12.pdb
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Consulta.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Tratamiento.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Consulta.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Tratamiento.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Tratamientonew.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Tratamientonew.baml
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Hospitalizacion.g.cs
+C:\Users\Ivan\Source\Repos\IvBanzaga\Programacion\0.0 2 ASP NET 3 NIVEL\Actividad 12\obj\Debug\Cpanel\Hospitalizacion.baml

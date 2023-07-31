@@ -1,0 +1,80 @@
+﻿<Window x:Class="Actividad_12.Cpanel.Principal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad_12.Cpanel"
+        mc:Ignorable="d"
+        Title="Panel de Acceso" Height="480" Width="800"
+         AllowsTransparency="False"
+        ResizeMode="CanMinimize"
+        WindowStyle="SingleBorderWindow"    
+        
+        Icon="/ICONO.png"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        xmlns:controlzex="urn:controlzex" 
+        x:Name="Practica" 
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Cpanel/fodo_cpanel.jpg" Opacity="0.7"/>
+        </Grid.Background>
+        <Button x:Name="btn_volver" Click="btn_volver_Click" Content="Regresar" Margin="180,-170,0,0" Background="#FF44FB04"
+    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+    Style="{StaticResource MaterialDesignRaisedButton}" Height="45" Width="115" FontSize="18" HorizontalAlignment="Left">
+
+            <materialDesign:ButtonProgressAssist.IsIndeterminate>True</materialDesign:ButtonProgressAssist.IsIndeterminate>
+            <materialDesign:ButtonProgressAssist.IsIndicatorVisible>True</materialDesign:ButtonProgressAssist.IsIndicatorVisible>
+            <materialDesign:ButtonProgressAssist.Value>-1</materialDesign:ButtonProgressAssist.Value>
+        </Button>
+
+
+        <StackPanel>
+            <Button x:Name="btn_hospitalizacion"
+            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
+            ToolTip="MaterialDesignRaisedSecondaryButton with Round Top Corners" Click="btn_hospitalizacion_Click" HorizontalAlignment="Left" Margin="622,400,0,0" Background="#FFEA00B6" Width="155" VerticalAlignment="Top">
+                <TextBlock Text="Hopitalizacion" FontSize="18" />
+            </Button>
+
+            <Button x:Name="btn_tratamiento"
+            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
+            ToolTip="MaterialDesignRaisedSecondaryButton with Round Top Corners" Margin="475,-30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn_tratamiento_Click">
+                <TextBlock Text="Tratamientos" FontSize="18" />
+            </Button>
+
+            <Button x:Name="btn_consulta"
+            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
+            ToolTip="MaterialDesignRaisedSecondaryButton with Round Top Corners" Margin="350,-32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF59D448" Click="btn_consulta_Click">
+                <TextBlock Text="Consultas" FontSize="18" />
+            </Button>
+
+            <Button x:Name="btn_doctor"
+            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
+            ToolTip="MaterialDesignRaisedSecondaryButton with Round Top Corners" Margin="190,-32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF2196F3" Click="btn_doctor_Click">
+                <TextBlock Text="Acceso Doctor" FontSize="18" />
+            </Button>
+
+            <Button x:Name="btn_paciente"
+            materialDesign:ButtonAssist.CornerRadius="25 25 0 0"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Style="{StaticResource MaterialDesignRaisedSecondaryButton}"
+            ToolTip="MaterialDesignRaisedSecondaryButton with Round Top Corners" Margin="10,-32,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFF3A821" Click="btn_paciente_Click">
+                <TextBlock Text="Acceso Paciente" FontSize="18" />
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
