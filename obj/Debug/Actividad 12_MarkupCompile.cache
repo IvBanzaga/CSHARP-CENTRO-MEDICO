@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Ivan\Source\Repos\IvBanzaga\Hospital\obj\Debug\
+C:\Users\Ivan\source\repos\IvBanzaga\Hospital\obj\Debug\
 Actividad_12
 none
 false
 DEBUG;TRACE
-C:\Users\Ivan\Source\Repos\IvBanzaga\Hospital\App.xaml
-10-227133305
+C:\Users\Ivan\source\repos\IvBanzaga\Hospital\App.xaml
+111049343114
 
-181030335092
-24-1044689250
-Cpanel\Consulta.xaml;Cpanel\Doctor.xaml;Cpanel\Hospitalizacion.xaml;Cpanel\Paciente.xaml;Cpanel\Principal.xaml;Cpanel\Tratamiento.xaml;Cpanel\Tratamientonew.xaml;MainWindow.xaml;Registro\RegistroDoctor.xaml;Usuario\PanelUsuario.xaml;
+191821324905
+241873833502
+Cpanel\Consulta.xaml;Cpanel\Doctor.xaml;Cpanel\Hospitalizacion.xaml;Cpanel\Paciente.xaml;Cpanel\personalEnfermeria.xaml;Cpanel\Principal.xaml;Cpanel\Tratamiento.xaml;Cpanel\Tratamientonew.xaml;MainWindow.xaml;Registro\RegistroDoctor.xaml;Usuario\PanelUsuario.xaml;
 
 False
 

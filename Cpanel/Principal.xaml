@@ -33,6 +33,15 @@
             <materialDesign:ButtonProgressAssist.Value>-1</materialDesign:ButtonProgressAssist.Value>
         </Button>
 
+        <Button x:Name="btn_enfermeria" Click="btn_enfermeria_Click" Content="Personal Enfermería" Background="#FF8C2C61"
+    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+    Style="{StaticResource MaterialDesignRaisedButton}" Height="45" Width="213" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,150">
+
+            <materialDesign:ButtonProgressAssist.IsIndeterminate>True</materialDesign:ButtonProgressAssist.IsIndeterminate>
+            <materialDesign:ButtonProgressAssist.IsIndicatorVisible>True</materialDesign:ButtonProgressAssist.IsIndicatorVisible>
+            <materialDesign:ButtonProgressAssist.Value>-1</materialDesign:ButtonProgressAssist.Value>
+        </Button>
+
 
         <StackPanel>
             <Button x:Name="btn_hospitalizacion"
