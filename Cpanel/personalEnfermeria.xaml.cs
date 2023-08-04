@@ -307,13 +307,34 @@ namespace Actividad_12.Cpanel
 
             // ID del OBJETO seleccionado
             int idenfermero = Convert.ToInt32(selectedRow["ID"]);
+            //int idsupervisor = Convert.ToInt32(selectedRow["ID"]);
 
             string islaSelected = SeleccionIsla.SelectionBoxItem.ToString();
             string subConsulta = "Select ID from Isla where Nombre = '" + islaSelected + "'";
 
+
+
+            /**********************************************************************************************/
+            /*********************************************************************************************/
+
+
+            //string doctorSupervisor = ListaSupervisor.SelectedIndex.ToString();
+            //string subSupervisor = "Select ID from Doctor where Nombre = '" + doctorSupervisor + "'";
+
+           // string subSupervisor = "Select NOMBRE from DOCTOR where ID = (select ID_SUPERVISOR FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria)";
+
+
+
+
+
+
+
+            /**********************************************************************************************/
+            /**********************************************************************************************/
+
             string consulta = "UPDATE Pesonal_Enfermeria SET NOMBRE = @Nombre, APELLIDO1 = @Apellido1, APELLIDO2 = @Apellido2, TELEFONO = @telefono, NIF_NIE = @nie, FECHA_ALTA = @alta, Isla_Residencia = (" + subConsulta + "), ID_Supervisor = @supervisor WHERE ID = @idenfermero";
 
-            //string consulta = "UPDATE Pesonal_Enfermeria SET NOMBRE = @Nombre, APELLIDO1 = @Apellido1, APELLIDO2 = @Apellido2, TELEFONO = @TELEFONO, NIF_NIE = @nie, FECHA_ALTA = @alta, ID_SUPERVISOR = @supervisor, ISLA_RESIDENCIA = @isla   WHERE ID = @idenfermero";
+            //string consulta = "UPDATE Pesonal_Enfermeria SET NOMBRE = @Nombre, APELLIDO1 = @Apellido1, APELLIDO2 = @Apellido2, TELEFONO = @telefono, NIF_NIE = @nie, FECHA_ALTA = @alta, Isla_Residencia = (" + subConsulta + "), ID_Supervisor = (" + subSupervisor + ") WHERE ID = @idenfermero";
 
 
             SqlCommand comandoSql = new SqlCommand(consulta, miConexionSql);
@@ -325,8 +346,11 @@ namespace Actividad_12.Cpanel
             comandoSql.Parameters.AddWithValue("@telefono", txbTelefono.Text);
             comandoSql.Parameters.AddWithValue("@nie", txbNie.Text);
             comandoSql.Parameters.AddWithValue("@alta", TxbFechaAlta.Text);
-            comandoSql.Parameters.AddWithValue("@supervisor", ListaSupervisor.SelectedValue);
-            //comandoSql.Parameters.AddWithValue("@isla", SeleccionIsla.SelectedIndex + 10);
+            //comandoSql.Parameters.AddWithValue(subSupervisor, ListaSupervisor.SelectedIndex);
+            comandoSql.Parameters.AddWithValue("@supervisor", ListaSupervisor.SelectedIndex +2);
+
+
+
             comandoSql.Parameters.AddWithValue("@idenfermero", idenfermero);
 
 
