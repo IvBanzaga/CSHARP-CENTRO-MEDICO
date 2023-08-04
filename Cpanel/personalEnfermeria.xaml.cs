@@ -47,7 +47,7 @@ namespace Actividad_12.Cpanel
 
         private void MuestraIsla()
         {
-            // Verificar que la conexión esté abierta antes de ejecutar la consulta
+
             if (miConexionSql.State != ConnectionState.Open)
             {
                 miConexionSql.Open();
@@ -55,8 +55,8 @@ namespace Actividad_12.Cpanel
 
             try
             {
+                string consulta = "SELECT * FROM ISLA";
 
-                string consulta = "SELECT ID, NOMBRE FROM ISLA";
 
                 SqlCommand miComandoSql = new SqlCommand(consulta, miConexionSql);
 
@@ -64,36 +64,61 @@ namespace Actividad_12.Cpanel
 
                 using (miLectorSql)
                 {
-                    // Limpiar cualquier valor existente en el ComboBox
-                    SeleccionIsla.Items.Clear();
 
-                    // Agregar los datos al ComboBox
+                    //SeleccionIsla.Items.Clear();
+
+
                     while (miLectorSql.Read())
                     {
-                        int idAeropuerto = miLectorSql.GetInt32(0);
-                        string siglasAeropuerto = miLectorSql.GetString(1);
+                        int idIsla = miLectorSql.GetInt32(0);
+                        string nombreIsla = miLectorSql.GetString(1);
 
                         ComboBoxItem nuevoItem = new ComboBoxItem();
-                        nuevoItem.Content = siglasAeropuerto;
-                        nuevoItem.Tag = idAeropuerto;
+                        nuevoItem.Content = nombreIsla;
+                        nuevoItem.Tag = idIsla;
 
                         SeleccionIsla.Items.Add(nuevoItem);
                     }
 
-                    // Seleccionar el primer item en el ComboBox
+
                     if (SeleccionIsla.Items.Count > 0)
                     {
                         SeleccionIsla.SelectedIndex = 0;
                     }
                 }
-
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                // Manejar la excepción como sea necesario
-                MessageBox.Show(e.ToString());
+                MessageBox.Show("Error en combox islas: " + ex.Message);
             }
         }
+
+        /*
+         * 
+         *  private void MuestraIsla()
+        {
+            try
+            {
+                string consulta = "SELECT * FROM ISLA";
+
+                SqlDataAdapter adaptadorSql = new SqlDataAdapter(consulta, miConexionSql);
+
+                using (adaptadorSql)
+                {
+                    DataTable islasCanarias = new DataTable();
+                    adaptadorSql.Fill(islasCanarias);
+
+                    SeleccionIsla.ItemsSource = "NOMBRE";
+                    SeleccionIsla.SelectedValuePath = "ID";
+                    SeleccionIsla.ItemsSource = islasCanarias.DefaultView;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en combox islas: " + ex.Message);
+            }
+        }*/
+
 
         /********************************************************************/
         /********************************************************************/
@@ -132,7 +157,7 @@ namespace Actividad_12.Cpanel
 
                 using (miAdaptadorSql)
                 {
-                 
+
 
                     DataTable doctorTabla = new DataTable();
                     miAdaptadorSql.Fill(doctorTabla);
@@ -198,7 +223,7 @@ namespace Actividad_12.Cpanel
 
         private void BtnAgregarEnfermera_Click(object sender, RoutedEventArgs e)
         {
-            
+
 
             try
             {
@@ -215,11 +240,13 @@ namespace Actividad_12.Cpanel
                     return;
                 }
 
-                string consulta = "INSERT INTO Pesonal_Enfermeria (NOMBRE, APELLIDO1, APELLIDO2, TELEFONO, NIF_NIE, FECHA_ALTA, Isla_Residencia, ID_Supervisor ) values (@Nombre, @Apellido1, @Apellido2, @telefono, @nie, @alta, @isla, @supervisor)";
-
+                //string consulta = "INSERT INTO Pesonal_Enfermeria (NOMBRE, APELLIDO1, APELLIDO2, TELEFONO, NIF_NIE, FECHA_ALTA, Isla_Residencia, ID_Supervisor ) values (@Nombre, @Apellido1, @Apellido2, @telefono, @nie, @alta, @isla, @supervisor)";
+                string islaSelected = SeleccionIsla.SelectionBoxItem.ToString();
+                string subConsulta = "Select ID from Isla where Nombre = '" + islaSelected + "'";
+                string consulta = "INSERT INTO Pesonal_Enfermeria (NOMBRE, APELLIDO1, APELLIDO2, TELEFONO, NIF_NIE, FECHA_ALTA, Isla_Residencia, ID_Supervisor ) values (@Nombre, @Apellido1, @Apellido2, @telefono, @nie, @alta, (" + subConsulta + ") , @supervisor)";
                 SqlCommand miSqlCommand = new SqlCommand(consulta, miConexionSql);
 
- ;
+                ;
                 miSqlCommand.Parameters.AddWithValue("@Nombre", txbnombreEnfermero.Text);
                 miSqlCommand.Parameters.AddWithValue("@Apellido1", txbapellido1.Text);
                 miSqlCommand.Parameters.AddWithValue("@Apellido2", txbapellido2.Text);
@@ -227,8 +254,8 @@ namespace Actividad_12.Cpanel
                 miSqlCommand.Parameters.AddWithValue("@nie", txbNie.Text);
                 miSqlCommand.Parameters.AddWithValue("@alta", TxbFechaAlta.Text);
                 miSqlCommand.Parameters.AddWithValue("@supervisor", ListaSupervisor.SelectedValue);
-                miSqlCommand.Parameters.AddWithValue("@isla", SeleccionIsla.SelectedIndex+10);
-          
+                //miSqlCommand.Parameters.AddWithValue("@isla", SeleccionIsla.SelectedIndex + 10);
+
 
 
                 miSqlCommand.ExecuteNonQuery();
@@ -245,7 +272,7 @@ namespace Actividad_12.Cpanel
                 txbapellido2.Clear();
                 txbapellido1.Clear();
                 txbNie.Clear();
-                
+
                 SeleccionIsla.SelectedIndex = 1;
 
 
@@ -255,7 +282,7 @@ namespace Actividad_12.Cpanel
                 MessageBox.Show("Error al registrar los datos de enfermera: " + ex.Message);
             }
         }
-    
+
 
         /********************************************************************/
         /********************************************************************/
@@ -281,7 +308,12 @@ namespace Actividad_12.Cpanel
             // ID del OBJETO seleccionado
             int idenfermero = Convert.ToInt32(selectedRow["ID"]);
 
-            string consulta = "UPDATE Pesonal_Enfermeria SET NOMBRE = @Nombre, APELLIDO1 = @Apellido1, APELLIDO2 = @Apellido2, TELEFONO = @TELEFONO, NIF_NIE = @nie, FECHA_ALTA = @alta, ID_SUPERVISOR = @supervisor, ISLA_RESIDENCIA = @isla   WHERE ID = @idenfermero";
+            string islaSelected = SeleccionIsla.SelectionBoxItem.ToString();
+            string subConsulta = "Select ID from Isla where Nombre = '" + islaSelected + "'";
+
+            string consulta = "UPDATE Pesonal_Enfermeria SET NOMBRE = @Nombre, APELLIDO1 = @Apellido1, APELLIDO2 = @Apellido2, TELEFONO = @telefono, NIF_NIE = @nie, FECHA_ALTA = @alta, Isla_Residencia = (" + subConsulta + "), ID_Supervisor = @supervisor WHERE ID = @idenfermero";
+
+            //string consulta = "UPDATE Pesonal_Enfermeria SET NOMBRE = @Nombre, APELLIDO1 = @Apellido1, APELLIDO2 = @Apellido2, TELEFONO = @TELEFONO, NIF_NIE = @nie, FECHA_ALTA = @alta, ID_SUPERVISOR = @supervisor, ISLA_RESIDENCIA = @isla   WHERE ID = @idenfermero";
 
 
             SqlCommand comandoSql = new SqlCommand(consulta, miConexionSql);
@@ -294,8 +326,9 @@ namespace Actividad_12.Cpanel
             comandoSql.Parameters.AddWithValue("@nie", txbNie.Text);
             comandoSql.Parameters.AddWithValue("@alta", TxbFechaAlta.Text);
             comandoSql.Parameters.AddWithValue("@supervisor", ListaSupervisor.SelectedValue);
-            comandoSql.Parameters.AddWithValue("@isla", SeleccionIsla.SelectedIndex + 10);
+            //comandoSql.Parameters.AddWithValue("@isla", SeleccionIsla.SelectedIndex + 10);
             comandoSql.Parameters.AddWithValue("@idenfermero", idenfermero);
+
 
             comandoSql.ExecuteNonQuery();
 
@@ -307,21 +340,21 @@ namespace Actividad_12.Cpanel
 
             MuestraPersonalEnfermeria();
             MuestraSupervisor();
-          
+
             txbnombreEnfermero.Text = "";
             txbapellido1.Text = "";
             txbapellido2.Text = "";
             txbTelefono.Text = "";
             TxbFechaAlta.Text = "";
             txbNie.Text = "";
-            
+
         }
 
-    
 
-    /********************************************************************/
-    /********************************************************************/
-    private void BtnVolver_Click(object sender, RoutedEventArgs e)
+
+        /********************************************************************/
+        /********************************************************************/
+        private void BtnVolver_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
 
@@ -345,7 +378,7 @@ namespace Actividad_12.Cpanel
 
         private void ListaSupervisor_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-          
+
         }
 
         /********************************************************************/
@@ -374,8 +407,16 @@ namespace Actividad_12.Cpanel
                     miConexionSql.Open();
                 }
 
-                string consulta = "SELECT NOMBRE, APELLIDO1, APELLIDO2, TELEFONO, FECHA_ALTA, ISLA_RESIDENCIA, NIF_NIE  FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria";
 
+                //string islaSelected = SeleccionIsla.Text;
+
+                string subConsulta = "Select NOMBRE from ISLA where ID = (select ISLA_RESIDENCIA FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria)";
+
+                string subConsultaSupervisor  = "Select NOMBRE from DOCTOR where ID = (select ID_SUPERVISOR FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria)";
+
+                string consulta = "SELECT NOMBRE, APELLIDO1, APELLIDO2, TELEFONO, NIF_NIE, FECHA_ALTA, ISLA_RESIDENCIA = (" + subConsulta + "), ID_SUPERVISOR = (" + subConsultaSupervisor + ") FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria";
+
+               
                 SqlCommand miSqlCommand = new SqlCommand(consulta, miConexionSql);
 
                 SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(miSqlCommand);
@@ -396,8 +437,12 @@ namespace Actividad_12.Cpanel
                     TxbFechaAlta.Text = tratamientoTabla.Rows[0]["FECHA_ALTA"].ToString();
                     txbNie.Text = tratamientoTabla.Rows[0]["NIF_NIE"].ToString();
                     SeleccionIsla.Text = tratamientoTabla.Rows[0]["ISLA_RESIDENCIA"].ToString();
+                    txbSupervisor.Text = tratamientoTabla.Rows[0]["ID_SUPERVISOR"].ToString();
 
-                 
+
+
+
+
 
                     MessageBox.Show("Se mostrarán los detalles de la ENFERMERA. Puedes modificarlos y luego pulsar MODIFICAR. Gracias por utilizar la aplicación.");
                 }
