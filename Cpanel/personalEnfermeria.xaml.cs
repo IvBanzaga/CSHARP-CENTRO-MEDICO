@@ -298,16 +298,16 @@ namespace Actividad_12.Cpanel
             }
 
             // Verificar que haya un OBJETO seleccionado en TodosTratamientos
-            if (ListaEnfermera.SelectedItem == null || !(ListaEnfermera.SelectedItem is DataRowView selectedRow))
+            if (ListaEnfermera.SelectedItem == null || !(ListaEnfermera.SelectedItem is DataRowView selectedRow) || ListaSupervisor.SelectedItem == null || !(ListaSupervisor.SelectedItem is DataRowView selectedRowSupervisor))
             {
-                MessageBox.Show("Por favor, selecciona una Enfermera para modificar.");
+                MessageBox.Show("Por favor, selecciona una Enfermera y/o Supervisor asignado para modificar.");
                 return;
             }
 
-
             // ID del OBJETO seleccionado
             int idenfermero = Convert.ToInt32(selectedRow["ID"]);
-            //int idsupervisor = Convert.ToInt32(selectedRow["ID"]);
+            int idsupervisor = Convert.ToInt32(selectedRowSupervisor["ID"]);
+
 
             string islaSelected = SeleccionIsla.SelectionBoxItem.ToString();
             string subConsulta = "Select ID from Isla where Nombre = '" + islaSelected + "'";
@@ -321,7 +321,7 @@ namespace Actividad_12.Cpanel
             //string doctorSupervisor = ListaSupervisor.SelectedIndex.ToString();
             //string subSupervisor = "Select ID from Doctor where Nombre = '" + doctorSupervisor + "'";
 
-           // string subSupervisor = "Select NOMBRE from DOCTOR where ID = (select ID_SUPERVISOR FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria)";
+            //string subSupervisor = "Select NOMBRE from DOCTOR where ID = (select ID_SUPERVISOR FROM Pesonal_Enfermeria WHERE ID = @idEnfermeria)";
 
 
 
@@ -346,10 +346,10 @@ namespace Actividad_12.Cpanel
             comandoSql.Parameters.AddWithValue("@telefono", txbTelefono.Text);
             comandoSql.Parameters.AddWithValue("@nie", txbNie.Text);
             comandoSql.Parameters.AddWithValue("@alta", TxbFechaAlta.Text);
-            //comandoSql.Parameters.AddWithValue(subSupervisor, ListaSupervisor.SelectedIndex);
-            comandoSql.Parameters.AddWithValue("@supervisor", ListaSupervisor.SelectedIndex +2);
+            comandoSql.Parameters.AddWithValue("@supervisor", idsupervisor);
+            //comandoSql.Parameters.AddWithValue("@supervisor", ListaSupervisor.SelectedIndex +1);
 
-
+            
 
             comandoSql.Parameters.AddWithValue("@idenfermero", idenfermero);
 
