@@ -3,6 +3,10 @@
     "",
     "\\Cpanel"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\Cpanel\\Hospitalizacion.xaml.cs",
+=======
+  "SelectedNode": "\\Cpanel\\personalEnfermeria.xaml.cs",
+>>>>>>> 6b3e3d1abe280d6ebd2c733f2bc85b67e3d1cda2
   "PreviewInSolutionExplorer": false
 }

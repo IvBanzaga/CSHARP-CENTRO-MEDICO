@@ -94,6 +94,9 @@
     <Compile Include="Cpanel\Paciente.xaml.cs">
       <DependentUpon>Paciente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cpanel\personalEnfermeria.xaml.cs">
+      <DependentUpon>personalEnfermeria.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cpanel\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
@@ -133,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Cpanel\Paciente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cpanel\personalEnfermeria.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

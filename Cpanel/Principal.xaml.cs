@@ -71,5 +71,12 @@ namespace Actividad_12.Cpanel
             newHospitalizacion.Show();
             this.Close();
         }
+
+        private void btn_enfermeria_Click(object sender, RoutedEventArgs e)
+        {
+            Cpanel.personalEnfermeria newEnfermeria = new Cpanel.personalEnfermeria(miConexionSql);
+            newEnfermeria.Show();
+            this.Close();
+        }
     }
 }
