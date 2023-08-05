@@ -15,7 +15,7 @@ namespace Actividad_12
 
         public string crearConexion () 
         {
-            return ConfigurationManager.ConnectionStrings["Actividad_12.Properties.Settings.HospitalDBConnectionString1"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["Actividad_12.Properties.Settings.HospitalDBConnectionString"].ConnectionString;
 
            
         }

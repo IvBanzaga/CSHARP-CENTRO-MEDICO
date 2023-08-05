@@ -159,3 +159,5 @@ C:\Users\Ivan\Source\Repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.exe
 C:\Users\Ivan\Source\Repos\IvBanzaga\Hospital\obj\Debug\Actividad 12.pdb
 C:\Users\Ivan\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\personalEnfermeria.g.cs
 C:\Users\Ivan\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\personalEnfermeria.baml
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\personalEnfermeria.g.cs
+C:\Users\Iván Bazaga\source\repos\IvBanzaga\Hospital\obj\Debug\Cpanel\personalEnfermeria.baml
