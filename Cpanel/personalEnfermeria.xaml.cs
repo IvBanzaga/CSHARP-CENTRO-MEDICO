@@ -358,7 +358,7 @@ namespace Actividad_12.Cpanel
 
             miConexionSql.Close();
 
-            MessageBox.Show("Se modificaron los datos correctamente. Gracias por utilizar la aplicación");
+            MessageBox.Show("Se modificaron correctamente. Gracias por utilizar la aplicación");
 
             // Actualizar Metodos
 
